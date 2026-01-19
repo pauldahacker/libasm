@@ -1,0 +1,11 @@
+This is a test file for the ft_read() function
+My name is
+Paul
+I am a student at
+42
+
+
+
+
+
+LIBASM
