@@ -7,7 +7,7 @@
 
 size_t	ft_strlen(const char *str);
 char	*ft_strcpy(char *dest, const char *src);
-int	ft_strcmp(const char *s1, const char *s2);
+int     ft_strcmp(const char *s1, const char *s2);
 ssize_t	ft_write(int fd, const void *buf, size_t n);
 ssize_t	ft_read(int fd, void *buf, size_t n);
 char	*ft_strdup(const char *s);
@@ -23,14 +23,14 @@ int main(void)
 	printf("strlen(\"%s\")   : %zu\n", a1, strlen(a1));
 	printf("--------------------\n");
 	printf("ft_strlen(empty): %zu\n", ft_strlen(a2));
-        printf("strlen(empty)   : %zu\n", strlen(a2));
+    printf("strlen(empty)   : %zu\n", strlen(a2));
 	printf("--------------------\n");
 
 	// STRCPY TEST
 	printf("--------------------\nFT_STRCPY TEST\n--------------------\n");
 	char	b1[10] = "";
-        char	b2[10] = "";
-        char	b3[] = "yeye";
+    char	b2[10] = "";
+    char	b3[] = "yeye";
 	printf("strcpy(\"\", \"%s\"): %s\n", b3, strcpy(b1, b3));
 	printf("ft_strcpy(\"\", \"%s\"): %s\n", b3, ft_strcpy(b2, b3));
 	printf("--------------------\n");
@@ -89,7 +89,7 @@ int main(void)
 	printf("ft_write(-1, \"%s\", 17):\n", d);
 	ssize_t ret3 = ft_write(-1, d, 17);
 	printf("\nreturn value = %zd, errno = %d (%s)\n\n",
-		ret3, errno, strerror(errno));
+        ret3, errno, strerror(errno));
 
 	errno = 0;
 	printf("write(-1, \"%s\", 17):\n", d);
@@ -104,7 +104,7 @@ int main(void)
 	char	buf1[43];
 	char	buf2[43];
 	char	*file_name = "./test/test.txt";
-	int	fd;
+	int	    fd;
 
 	fd = open(file_name, O_RDONLY);
 	errno = 0;
