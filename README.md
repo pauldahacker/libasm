@@ -109,7 +109,13 @@ ft_function:
 ```
 
 ## Resources
+- [Amazing Cheatsheet](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
+- [NASM Assembly Tutorial with beginner-friendly examples](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
 
-- [x86-64 Instruction Set Reference](https://www.felixcloutier.com/x86/)
-- [System V AMD64 ABI](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
-- [NASM Assembly Language Tutorial](https://cs.lmu.edu/~ray/notes/nasmtutorial/)
+- [Syscalls table](https://x64.syscall.sh/)
+- [__errno_location()](http://refspecs.linux-foundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/baselib---errno-location.html)
+- [Understanding errno better](https://www.reddit.com/r/C_Programming/comments/p9wg02/trouble_understanding_errno/)
+- [Calling Functions in Assembly](https://www.cs.uaf.edu/2017/fall/cs301/lecture/09_06_functions.html)
+- [Stack alignment - see page 16](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
+
+

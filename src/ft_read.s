@@ -14,9 +14,9 @@ ft_read:
 
 .error:
 	neg rax			; negate to obtain positive errno
-	push rax		; push errno to stack to save it
-	call __errno_location wrt ..plt	; rax = &errno
+	push rax		; push errno to stack to save it and align stack
+	call __errno_location wrt ..plt	; rax = &errno (address of errno variable)
 	pop r8			; pop errno into unused register
 	mov [rax], r8	; *rax = errno
-	mov rax, -1		; rax = -1
+	mov rax, -1		; rax = -1 (error returns -1)
 	ret
