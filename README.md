@@ -4,7 +4,7 @@ A learning project implementing core C standard library functions in **x86-64 as
 
 ## What is Assembly?
 
-Assembly is a symbolic representation of **machine code**:the instructions that CPUs directly execute. Here's how the translation process works:
+Assembly is a symbolic representation of **machine code**: the instructions that CPUs directly execute. Here's how the translation process works:
 
 ```
 ┌─────────────┐    compile    ┌────────────┐   assemble   ┌──────────────┐    link    ┌ ────────────────┐
