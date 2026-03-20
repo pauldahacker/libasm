@@ -9,7 +9,7 @@ extern	ft_strcpy
 section	.text
 
 ft_strdup:
-	push rdi		; push string to stack to save it
+	push rdi		; push string to stack to save it and align stack
 	call ft_strlen		; get string length
 	inc rax			; add 1 for the '\0'
 	mov rdi, rax		; copy (length + 1) into rdi

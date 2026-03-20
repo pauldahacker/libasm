@@ -146,7 +146,7 @@ int main(void)
 
 	char *s1 = "libasm";
 	char *s2 = "";
-	char *s3 = "Loooooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngggg";
+	char *s3 = "Loooooooooooooooooooooooooooooonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg";
 
 	errno = 0;
 	char *d1 = ft_strdup(s1);
