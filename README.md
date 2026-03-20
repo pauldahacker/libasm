@@ -4,7 +4,7 @@ A learning project implementing core C standard library functions in **x86-64 as
 
 ## What is Assembly?
 
-Assembly is a symbolic representation of **machine code**—the instructions that CPUs directly execute. Here's how the translation process works:
+Assembly is a symbolic representation of **machine code**:the instructions that CPUs directly execute. Here's how the translation process works:
 
 ```
 ┌─────────────┐    compile    ┌────────────┐   assemble   ┌──────────────┐    link    ┌ ────────────────┐
@@ -50,7 +50,7 @@ Both do the same thing, but assembly shows **exactly** what the CPU is doing at 
 
 ### Requirements
 - `nasm` (Netwide Assembler)
-- `gcc` or `clang`
+- `gcc`
 - `make`
 
 ### Compile
@@ -82,13 +82,19 @@ This compiles C code that calls your assembly functions and compares outputs wit
 
 Key registers used in this project:
 
-| Register | Purpose | Size |
+| Register | Purpose | Saved across calls? |
 |----------|---------|------|
-| `rax` | Return value, accumulator | 64-bit |
-| `rdi` | First function argument | 64-bit |
-| `rsi` | Second function argument | 64-bit |
-| `rdx` | Third function argument | 64-bit |
-| `rcx` | Fourth function argument, loop counter | 64-bit |
+| `rax` | Return value, accumulator | no |
+| `rdi` | First function argument | yes |
+| `rsi` | Second function argument | no |
+| `rdx` | Third function argument | no |
+| `rcx` | Fourth function argument, loop counter | no |
+| `rsp` | Stack pointer (to top of stack) | yes |
+| `r8` | Fifth function argument | no |
+| `r9` | Sixth function argument | no |
+| `r10-r11` | Temporary registers | no |
+| `r12-r15` | Callee-saved registers | yes |
+
 
 **Note:** The first 6 integer arguments are passed in registers (System V AMD64 ABI calling convention), not on the stack.
 
@@ -117,5 +123,3 @@ ft_function:
 - [Understanding errno better](https://www.reddit.com/r/C_Programming/comments/p9wg02/trouble_understanding_errno/)
 - [Calling Functions in Assembly](https://www.cs.uaf.edu/2017/fall/cs301/lecture/09_06_functions.html)
 - [Stack alignment - see page 16](https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf)
-
-
