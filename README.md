@@ -30,13 +30,13 @@ Here's how the translation process works:
 └─────────────┘               └────────────┘               └──────────────┘           └─────────────────┘
 ```
 
-**Key differences from C:**
+**Key differences with C:**
 - NO ABSTRACTIONS: You manage memory, registers, and CPU operations directly. You see exactly how the CPU interacts with memory.
 - OPERATIONS ARE EXPLICIT: Every memory load, every calculation, every function call is visible
 - REGISTERS: Values live in CPU registers (rax, rbx, rdi, etc.) rather than automatic memory allocation
 
 
-### Assembly File Format
+### Assembly Formatting
 
 Each `.s` file follows this pattern:
 
@@ -53,9 +53,9 @@ ft_function:
 ```
 
 
-### Example: `ft_strlen` in Assembly vs C
+### Example: ft_strlen in Assembly vs C
 
-**C version:**
+**in C:**
 ```c
 size_t ft_strlen(const char *str) {
     size_t i = 0;
@@ -65,7 +65,7 @@ size_t ft_strlen(const char *str) {
 }
 ```
 
-**Assembly version:**
+**in Assembly x86-64:**
 ```asm
 ft_strlen:
     xor rax, rax        ; rax = 0 (loop counter)
