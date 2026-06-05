@@ -4,7 +4,7 @@ For this 42 project, I needed to implement core C standard library functions in 
 
 ## What is Assembly?
 
-Assembly is a symbolic representation of **machine code**: the instructions that CPUs directly execute. So when writing in assembly, nearly all instruction that we write is exactly one binary machine code instruction!
+Assembly is a symbolic representation of machine code: the instructions that CPUs directly execute. So when writing in assembly, nearly all instruction that we write is exactly one binary machine code instruction!
 
 To help understand:
 
